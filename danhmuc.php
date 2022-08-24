@@ -8,9 +8,9 @@
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
             <nav class="header__navbar <?= (isset($danhmuc))?'danhmuc':'uk-navbar-transparent' ?> uk-navbar-container uk-background-muted" uk-navbar>
 
-                <div class="uk-navbar-left">
+                <div class="uk-navbar-left uk-flex-nowrap">
                     <a href="." class="uk-navbar-item"><span class="header__navbar__icon header__navbar__icon--back"></span></a>
-                    <h1 class="uk-navbar-item uk-logo header__navbar__logo uk-margin-remove uk-padding-remove">Nhà Cửa và Đời Sống</h1>
+                    <h1 class="uk-navbar-item uk-logo header__navbar__logo uk-margin-remove uk-padding-remove"><span>Những ứng viên 'thất nghiệp' sát ngày nhận việc</span></h1>
                 </div>
 
                 <div class="uk-navbar-right">

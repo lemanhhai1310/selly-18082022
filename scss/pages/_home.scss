@@ -160,6 +160,10 @@
   }
   &__ncc{
     max-width: 160px;
+    transition: max-width .3s linear;
+    .uk-active> &{
+      max-width: 180px;
+    }
   }
   &__card{
     &:not(.card){

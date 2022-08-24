@@ -2,6 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="REFRESH" content="1800"/>
     <title>Selly - Sản phẩm</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <!--CSS-->
@@ -15,7 +16,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit-icons.min.js"></script>
-    <script src="js/app.js?v=1660837503"></script>
+    <script src="js/app.js?v=1661305955"></script>
     <style>
         body {
             font-family: "Roboto Regular", sans-serif;
@@ -119,6 +120,10 @@
 
         #app {
             padding-bottom:calc(46px + 0px)
+        }
+
+        #app.notMenu {
+            padding-bottom:0 !important
         }
 
         @media (min-width: 1600px) {
@@ -945,7 +950,7 @@
             }
         }
 
-        .line-clamp-1 {
+        .header__navbar__logo span, .line-clamp-1 {
             display: -webkit-box;
             -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
@@ -996,7 +1001,7 @@
             margin-top:3px
         }
 
-        .header__navbar.uk-navbar-sticky {
+        .header__navbar.danhmuc, .header__navbar.uk-navbar-sticky {
             background-color: #fff;
             border-bottom:1px solid #dee2e6 !important
         }
@@ -1023,6 +1028,10 @@
             display: flex;
             background-repeat: no-repeat;
             background-position:center
+        }
+
+        .header__navbar__icon--back {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M17 2.5L7 12.5L17 22.5' stroke='currentColor' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E")
         }
 
         .header__navbar__icon--cart {
@@ -1147,7 +1156,7 @@
 
         .home__title {
             font-size: 16px;
-            font-family: "Verdana Bold", sans-serif;
+            font-family: "Roboto Medium", sans-serif;
             text-transform: uppercase;
             color:#00002E
         }
@@ -1333,7 +1342,13 @@
         }
 
         .home__ncc {
-            max-width:160px
+            max-width: 160px;
+            -webkit-transition: max-width 0.3s linear;
+            transition:max-width 0.3s linear
+        }
+
+        .uk-active > .home__ncc {
+            max-width:180px
         }
 
         .home__card {
@@ -1345,6 +1360,11 @@
 
         .home__card:not(.card) {
             width:179px !important
+        }
+
+        .home__card.card {
+            -webkit-box-shadow: none;
+            box-shadow:none
         }
 
         .home__card__title {
@@ -1451,7 +1471,7 @@
 </head>
 <body class="">
 <!--app-->
-<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<div id="app" class=" uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
     <!--Content-->
     <div class="app__container">
         <div class="uk-background-muted item__3 uk-section-xsmall uk-padding-remove-top uk-padding-remove-bottom">
@@ -1459,7 +1479,9 @@
                 <nav class="header__navbar uk-navbar-container uk-navbar-transparent uk-background-muted" uk-navbar>
 
                     <div class="uk-navbar-left">
-                        <a href="" class="uk-navbar-item uk-logo header__navbar__logo">Selly - Bán hàng dễ dàng</a>
+                        <a href="" class="uk-navbar-item uk-logo header__navbar__logo">
+                            <span>Selly - Bán hàng dễ dàng</span>
+                        </a>
                     </div>
 
                     <div class="uk-navbar-right">
@@ -1554,84 +1576,84 @@
                         </div>
                     </div>
                 </div>
-                <div class="item__25" uk-slider>
+                <div class="item__25" uk-slider="autoplay: true">
 
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
                         <ul class="uk-slider-items uk-child-width-1-1">
                             <li>
                                 <div class="uk-cover-container home__slider__cover">
-                                    <img src="https://media.sellycdn.net/files/md_2022_07_29_10_22_43_0700_xZRWLAAKTa.jpg" alt="" uk-cover>
+                                    <img data-src="https://media.sellycdn.net/files/md_2022_07_29_10_22_43_0700_xZRWLAAKTa.jpg" alt="" uk-img uk-cover>
                                     <canvas width="374" height="281">
                                     </canvas>
                                 </div>
                             </li>
                             <li>
                                 <div class="uk-cover-container home__slider__cover">
-                                    <img src="https://media.sellycdn.net/files/md_2022_08_04_10_39_56_0700_pEqTFOKOjl.jpg" alt="" uk-cover>
+                                    <img data-src="https://media.sellycdn.net/files/md_2022_08_04_10_39_56_0700_pEqTFOKOjl.jpg" alt="" uk-img uk-cover>
                                     <canvas width="374" height="281">
                                     </canvas>
                                 </div>
                             </li>
                             <li>
                                 <div class="uk-cover-container home__slider__cover">
-                                    <img src="https://media.sellycdn.net/files/md_2022_08_08_03_35_19_0700_kOvazvbXOC.jpg" alt="" uk-cover>
+                                    <img data-src="https://media.sellycdn.net/files/md_2022_08_08_03_35_19_0700_kOvazvbXOC.jpg" alt="" uk-img uk-cover>
                                     <canvas width="374" height="281">
                                     </canvas>
                                 </div>
                             </li>
                             <li>
                                 <div class="uk-cover-container home__slider__cover">
-                                    <img src="https://media.sellycdn.net/files/md_2022_08_14_03_11_48_0700_EmZRlwBGNS.jpg" alt="" uk-cover>
+                                    <img data-src="https://media.sellycdn.net/files/md_2022_08_14_03_11_48_0700_EmZRlwBGNS.jpg" alt="" uk-img uk-cover>
                                     <canvas width="374" height="281">
                                     </canvas>
                                 </div>
                             </li>
                             <li>
                                 <div class="uk-cover-container home__slider__cover">
-                                    <img src="https://media.sellycdn.net/files/md_2022_08_15_07_19_02_0700_VYeEQvgckY.jpg" alt="" uk-cover>
+                                    <img data-src="https://media.sellycdn.net/files/md_2022_08_15_07_19_02_0700_VYeEQvgckY.jpg" alt="" uk-img uk-cover>
                                     <canvas width="374" height="281">
                                     </canvas>
                                 </div>
                             </li>
                             <li>
                                 <div class="uk-cover-container home__slider__cover">
-                                    <img src="https://media.sellycdn.net/files/md_2022_07_29_10_37_35_0700_GkBOlJFhxK.jpg" alt="" uk-cover>
+                                    <img data-src="https://media.sellycdn.net/files/md_2022_07_29_10_37_35_0700_GkBOlJFhxK.jpg" alt="" uk-img uk-cover>
                                     <canvas width="374" height="281">
                                     </canvas>
                                 </div>
                             </li>
                             <li>
                                 <div class="uk-cover-container home__slider__cover">
-                                    <img src="https://media.sellycdn.net/files/md_2022_07_29_10_49_18_0700_BhGCPrsdwE.jpg" alt="" uk-cover>
+                                    <img data-src="https://media.sellycdn.net/files/md_2022_07_29_10_49_18_0700_BhGCPrsdwE.jpg" alt="" uk-img uk-cover>
                                     <canvas width="374" height="281">
                                     </canvas>
                                 </div>
                             </li>
                             <li>
                                 <div class="uk-cover-container home__slider__cover">
-                                    <img src="https://media.sellycdn.net/files/md_2022_08_02_06_49_30_0700_GmfWFsMyHY.jpg" alt="" uk-cover>
+                                    <img data-src="https://media.sellycdn.net/files/md_2022_08_02_06_49_30_0700_GmfWFsMyHY.jpg" alt="" uk-img uk-cover>
                                     <canvas width="374" height="281">
                                     </canvas>
                                 </div>
                             </li>
                             <li>
                                 <div class="uk-cover-container home__slider__cover">
-                                    <img src="https://media.sellycdn.net/files/md_2022_07_29_10_50_43_0700_GTqmlMLBja.jpg" alt="" uk-cover>
+                                    <img data-src="https://media.sellycdn.net/files/md_2022_07_29_10_50_43_0700_GTqmlMLBja.jpg" alt="" uk-img uk-cover>
                                     <canvas width="374" height="281">
                                     </canvas>
                                 </div>
                             </li>
                             <li>
                                 <div class="uk-cover-container home__slider__cover">
-                                    <img src="https://media.sellycdn.net/files/md_2022_08_12_09_34_01_0700_ahNMygYFgO.jpg" alt="" uk-cover>
+                                    <img data-src="https://media.sellycdn.net/files/md_2022_08_12_09_34_01_0700_ahNMygYFgO.jpg" alt="" uk-img uk-cover>
                                     <canvas width="374" height="281">
                                     </canvas>
                                 </div>
                             </li>
                             <li>
                                 <div class="uk-cover-container home__slider__cover">
-                                    <img src="https://media.sellycdn.net/files/md_2022_07_29_10_51_30_0700_nufYiXlPGu.jpg" alt="" uk-cover>
+                                    <img data-src="https://media.sellycdn.net/files/md_2022_07_29_10_51_30_0700_nufYiXlPGu.jpg" alt="" uk-img uk-cover>
                                     <canvas width="374" height="281">
                                     </canvas>
                                 </div>
@@ -2003,7 +2025,7 @@
                             <h2 class="uk-h2 home__title">Sản phẩm đề xuất</h2>
                         </div>
                         <div class="uk-width-auto">
-                            <a href="" class="home__linkMore">Xem thêm</a>
+                            <a href="danhmuc.php" class="home__linkMore">Xem thêm</a>
                         </div>
                     </div>
                 </div>
@@ -2188,7 +2210,7 @@
                 <div class="home__boxSpace">
                     <div class="uk-position-relative uk-visible-toggle uk-light" style="padding: 15px 0" tabindex="-1" uk-slider="center: true;autoplay: true">
 
-                        <ul class="uk-slider-items uk-grid uk-grid-10">
+                        <ul class="uk-slider-items uk-grid uk-grid-10 uk-flex-middle">
                             <li class="uk-width-auto">
                                 <div class="home__ncc uk-cover-container uk-border-rounded uk-box-shadow-small">
                                     <img src="https://picsum.photos/420/323/?random?v=1" alt="" uk-cover>

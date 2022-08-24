@@ -12,6 +12,9 @@
     &__logo{
       font-size: 18px;
       font-family: $font-Roboto-Medium;
+      span{
+        @extend .line-clamp-1;
+      }
     }
     .uk-navbar-item{
       min-height: 50px;

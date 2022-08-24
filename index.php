@@ -8,7 +8,7 @@
                 <nav class="header__navbar uk-navbar-container uk-navbar-transparent uk-background-muted" uk-navbar>
 
                     <div class="uk-navbar-left">
-                        <a href="" class="uk-navbar-item uk-logo header__navbar__logo">Selly - Bán hàng dễ dàng</a>
+                        <a href="" class="uk-navbar-item uk-logo header__navbar__logo"><span>Selly - Bán hàng dễ dàng</span></a>
                     </div>
 
                     <div class="uk-navbar-right">
@@ -103,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item__25" uk-slider>
+                <div class="item__25" uk-slider="autoplay: true">
 
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
@@ -125,7 +125,7 @@
                             foreach ($data as $v): ?>
                                 <li>
                                     <div class="uk-cover-container home__slider__cover">
-                                        <img src="<?= $v ?>" alt="" uk-cover>
+                                        <img data-src="<?= $v ?>" alt="" uk-img uk-cover>
                                         <canvas width="374" height="281"></canvas>
                                     </div>
                                 </li>
@@ -387,7 +387,7 @@
                     <div class="uk-position-relative uk-visible-toggle uk-light" style="padding: 15px 0" tabindex="-1"
                          uk-slider="center: true;autoplay: true">
 
-                        <ul class="uk-slider-items uk-grid uk-grid-10">
+                        <ul class="uk-slider-items uk-grid uk-grid-10 uk-flex-middle">
                             <?php
                             for ($i = 1; $i <= 16; $i++):
                                 $img = 'https://picsum.photos/420/323/?random?v=' . +$i;
