@@ -54,6 +54,9 @@
       &::placeholder{
         color: #{$secondary-color};
       }
+      &:focus{
+        border-color: #{$primary-color} !important;
+      }
     }
   }
   &__boxSelect{
