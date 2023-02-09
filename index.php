@@ -1,5 +1,6 @@
 <?php $data["title"] = "Selly - Sản phẩm"; ?>
 <?php $bodyClass = '' ?>
+<?php $menuBottom = true; ?>
 <?php require "template-parts/layouts/header.php"; ?>
     <!--Content-->
     <div class="app__container">

@@ -17,10 +17,13 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit-icons.min.js"></script>
     <script src="js/app.js?v=<?php echo(time()) ?>"></script>
-    <style>
-<!--        --><?//= file_get_contents('style.css'); ?>
-    </style>
 </head>
 <body class="<?= (isset($bodyClass))?$bodyClass:'' ?>">
 <!--app-->
-<div id="app" class="<?= (isset($danhmuc))?'notMenu':'' ?> uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<?php
+$class="";
+if (!$menuBottom){
+    $class = "notMenu";
+}
+?>
+<div id="app" class="<?= $class ?> uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">

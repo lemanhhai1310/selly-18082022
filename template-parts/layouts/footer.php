@@ -1,11 +1,9 @@
-<?php if (isset($danhmuc)): ?>
-
-<?php else: ?>
+<?php if ($menuBottom): ?>
     <!--Menu bottom-->
     <nav class="footer__nav uk-position-fixed uk-position-bottom">
         <ul class="footer__nav__ul uk-nav uk-child-width-expand" uk-tab>
             <li class="uk-active footer__nav__li">
-                <a href="" class="footer__nav__a">
+                <a href="." class="footer__nav__a">
                     <span class="footer__nav__icon footer__nav__icon--sanpham"></span>
                     <div class="uk-navbar-subtitle footer__nav__txt line-clamp-1">Sản phẩm</div>
                 </a>
@@ -29,7 +27,7 @@
                 </a>
             </li>
             <li class="footer__nav__li">
-                <a href="" class="footer__nav__a">
+                <a href="taikhoan.php" class="footer__nav__a">
                     <span class="footer__nav__icon footer__nav__icon--taikhoan"></span>
                     <div class="uk-navbar-subtitle footer__nav__txt line-clamp-1">Tài khoản</div>
                 </a>
@@ -37,6 +35,8 @@
         </ul>
     </nav>
     <!--/Menu bottom-->
+<?php else: ?>
+
 <?php endif; ?>
 </div>
 <!--/app-->

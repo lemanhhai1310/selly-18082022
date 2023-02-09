@@ -1,6 +1,7 @@
 <?php $data["title"] = "Selly - Danh mục"; ?>
 <?php $bodyClass = '' ?>
 <?php $danhmuc = '' ?>
+<?php $menuBottom = false; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <!--Content-->
 <div class="app__container">
@@ -10,7 +11,7 @@
 
                 <div class="uk-navbar-left uk-flex-nowrap">
                     <a href="." class="uk-navbar-item"><span class="header__navbar__icon header__navbar__icon--back"></span></a>
-                    <h1 class="uk-navbar-item uk-logo header__navbar__logo uk-margin-remove uk-padding-remove"><span>Những ứng viên 'thất nghiệp' sát ngày nhận việc</span></h1>
+                    <h1 class="uk-navbar-item uk-logo header__navbar__logo uk-margin-remove uk-padding-remove"><span>Freeship thả ga</span></h1>
                 </div>
 
                 <div class="uk-navbar-right">

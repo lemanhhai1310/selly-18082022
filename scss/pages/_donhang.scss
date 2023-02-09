@@ -1,0 +1,52 @@
+.donhang{
+  &__section{
+
+  }
+  &__title{
+
+  }
+  &__form{
+    &__icon{
+
+    }
+    &__input{
+
+    }
+  }
+  &__box{
+    padding: 10px;
+    border-radius: 10px;
+    &--c1{
+      padding: 10px 20px;
+    }
+    &__txtLeft{
+
+    }
+    &__txtRight{
+
+    }
+    &__img{
+
+    }
+    &__icon{
+
+    }
+    &__title{
+
+    }
+    &__txt{
+
+    }
+    &__label{
+
+    }
+    &__btn{
+
+    }
+    &__item{
+      &:nth-child(n+2){
+        margin-top: 10px;
+      }
+    }
+  }
+}
