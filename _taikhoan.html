@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="REFRESH" content="1800"/>
+  <title>Selly - Tài khoản</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <!--CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="style.css?v=1678344147">
+
+  <!--JS-->
+  <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit-icons.min.js"></script>
+  <script src="js/app.js?v=1678344147"></script>
+</head>
+<body class="">
+<!--app-->
+<div id="app" class=" uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"><!--Content-->
+  <div class="app__container">
+    <div class="uk-background-default">
+      <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="header__navbar danhmuc uk-navbar-container uk-background-muted" uk-navbar>
+
+          <div class="uk-navbar-left uk-flex-nowrap">
+            <h1 class="uk-navbar-item uk-logo header__navbar__logo uk-margin-remove"><span>Tài khoản</span></h1>
+          </div>
+
+          <div class="uk-navbar-right">
+            <a href="" class="uk-navbar-item">
+              <span class="header__navbar__icon header__navbar__icon--setting"></span>
+            </a>
+          </div>
+
+        </nav>
+      </div>
+    </div>
+    <div class="uk-section-xsmall taikhoan__section">
+      <div class="uk-container uk-container-expand">
+        <div class="uk-margin uk-background-default uk-border-rounded uk-overflow-hidden">
+          <ul class="uk-nav uk-nav-default taikhoan__nav1">
+            <li class="user">
+              <a href="#">
+                <div class="uk-grid uk-grid-10 uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <div class="uk-cover-container uk-border-circle">
+                      <img src="images/sm_ic_avatar_default_male.png" alt="" uk-cover="">
+                      <canvas width="48" height="48"></canvas>
+                    </div>
+                  </div>
+                  <div class="uk-width-expand">
+                    <div class="taikhoan__nav1__name">Hải</div>
+                    <div class="taikhoan__nav1__txt">Thành viên</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <div class="taikhoan__nav1__icon taikhoan__nav1__icon--sodu"></div>
+                  </div>
+                  <div class="uk-width-expand">
+                    <div class="taikhoan__nav1__label">Số dư tài khoản</div>
+                    <div class="taikhoan__nav1__price">0đ</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <div class="taikhoan__nav1__icon taikhoan__nav1__icon--thue"></div>
+                  </div>
+                  <div class="uk-width-expand">
+                    <div class="taikhoan__nav1__label">Thuế TNCN của bạn</div>
+                    <div class="taikhoan__nav1__price">0đ</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <div class="taikhoan__nav1__icon taikhoan__nav1__icon--doisoat"></div>
+                  </div>
+                  <div class="uk-width-expand">
+                    <div class="taikhoan__nav1__label">Chờ đối soát</div>
+                    <div class="taikhoan__nav1__price">0đ</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="refund"><a href="">Rút tiền</a></li>
+          </ul>
+        </div>
+        <div class="uk-margin uk-background-default uk-border-rounded uk-overflow-hidden">
+          <ul class="uk-nav uk-nav-default taikhoan__nav1 taikhoan__nav1--nav2">
+            <li>
+              <a href="">
+                <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <div class="taikhoan__nav1__icon taikhoan__nav1__icon--kh"></div>
+                  </div>
+                  <div class="uk-width-expand">
+                    <div class="taikhoan__nav1__label">Khách hàng</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <div class="taikhoan__nav1__icon taikhoan__nav1__icon--passs"></div>
+                  </div>
+                  <div class="uk-width-expand">
+                    <div class="taikhoan__nav1__label">Cập nhật mật khẩu</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <div class="taikhoan__nav1__icon taikhoan__nav1__icon--baidang"></div>
+                  </div>
+                  <div class="uk-width-expand">
+                    <div class="taikhoan__nav1__label">Mẫu bài đăng bán của bạn</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="uk-margin">
+          <div class="uk-margin-medium uk-position-relative hotline">
+            <div class="taikhoan__box uk-background-default uk-border-rounded uk-overflow-hidden">
+              <div class="uk-grid uk-grid-small" uk-grid>
+                <div class="uk-width-expand">
+                  <div class="taikhoan__box__title">Hotline</div>
+                  <div class="taikhoan__box__txt">Giải quyết các vấn đề liên quan đến <b>đơn hàng</b></div>
+                </div>
+                <div class="uk-width-auto">
+                  <img style="width: 100px" src="images/helper_hotline.f73bbac4.png" alt="">
+                </div>
+              </div>
+            </div>
+            <a href="" class="uk-position-cover"></a>
+            <a href="" class="uk-button uk-button-secondary taikhoan__box__btn">Gọi ngay</a>
+          </div>
+          <div class="uk-margin-medium uk-position-relative community">
+            <div class="taikhoan__box uk-background-default uk-border-rounded uk-overflow-hidden">
+              <div class="uk-grid uk-grid-small" uk-grid>
+                <div class="uk-width-expand">
+                  <div class="taikhoan__box__title">Cộng đồng</div>
+                  <div class="taikhoan__box__txt">Giải đáp thắc mắc và trao đổi kinh nghiệm bán hàng</div>
+                </div>
+                <div class="uk-width-auto">
+                  <img style="width: 100px" src="images/helper_community.a2c756fd.png" alt="">
+                </div>
+              </div>
+            </div>
+            <a href="" class="uk-position-cover"></a>
+            <a href="" class="uk-button uk-button-secondary taikhoan__box__btn">Khám phá</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--/Content-->
+  <!--Menu bottom-->
+  <nav class="footer__nav uk-position-fixed uk-position-bottom">
+    <ul class="footer__nav__ul uk-nav uk-child-width-expand" uk-tab>
+      <li class="uk-active footer__nav__li">
+        <a href="." class="footer__nav__a">
+          <span class="footer__nav__icon footer__nav__icon--sanpham"></span>
+          <div class="uk-navbar-subtitle footer__nav__txt line-clamp-1">Sản phẩm</div>
+        </a>
+      </li>
+      <li class="footer__nav__li">
+        <a href="" class="footer__nav__a">
+          <span class="footer__nav__icon footer__nav__icon--donhang"></span>
+          <div class="uk-navbar-subtitle footer__nav__txt line-clamp-1">Đơn hàng</div>
+        </a>
+      </li>
+      <li class="footer__nav__li">
+        <a href="" class="footer__nav__a">
+          <span class="footer__nav__icon footer__nav__icon--thuvien"></span>
+          <div class="uk-navbar-subtitle footer__nav__txt line-clamp-1">Thư viện</div>
+        </a>
+      </li>
+      <li class="footer__nav__li">
+        <a href="" class="footer__nav__a">
+          <span class="footer__nav__icon footer__nav__icon--thuong"></span>
+          <div class="uk-navbar-subtitle footer__nav__txt line-clamp-1">Thưởng</div>
+        </a>
+      </li>
+      <li class="footer__nav__li">
+        <a href="taikhoan.php" class="footer__nav__a">
+          <span class="footer__nav__icon footer__nav__icon--taikhoan"></span>
+          <div class="uk-navbar-subtitle footer__nav__txt line-clamp-1">Tài khoản</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!--/Menu bottom-->
+</div>
+<!--/app-->
+</body>
+</html>
