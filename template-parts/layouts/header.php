@@ -16,14 +16,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit-icons.min.js"></script>
-    <script src="js/app.js?v=<?php echo(time()) ?>"></script>
 </head>
 <body class="<?= (isset($bodyClass))?$bodyClass:'' ?>">
 <!--app-->
-<?php
-$class="";
-if (!$menuBottom){
-    $class = "notMenu";
-}
-?>
-<div id="app" class="<?= $class ?> uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">

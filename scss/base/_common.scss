@@ -5,9 +5,10 @@
   }
 }
 #app{
-  $x:46px;
-  padding-bottom: calc(#{$x} + 0px);
+  //$x:46px;
+  //padding-bottom: calc(#{$x} + 0px);
   &.notMenu{
-    padding-bottom: 0 !important;
+    //padding-bottom: 0 !important;
+
   }
 }

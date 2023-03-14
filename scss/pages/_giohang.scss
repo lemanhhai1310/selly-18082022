@@ -1,0 +1,100 @@
+.giohang{
+  &__bottomFixed{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    &__txt{
+      color: rgb(56,64,89);
+      font-size: 14px;
+      strong{
+        font-family: $font-Roboto-Bold;
+      }
+    }
+    &__btn{
+      position: relative;
+      font-size: 18px;
+      text-transform: inherit;
+      $c: #c36;
+      background: #{$c};
+      $h:65px;
+      line-height: calc(#{$h} - 2px);
+      &:hover{
+        background: rgba($c,.8);
+      }
+      &:disabled{
+
+      }
+      svg{
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  &__checkbox{
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    &:checked{
+      background-color: #c36 !important;
+    }
+    &:focus{
+      border-color: #c36;
+    }
+  }
+  &__boxsp{
+    &__img{
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+    }
+    &__sl{
+      bottom: inherit;
+      top: calc(100% + 10px);
+      color: #6c757d;
+      font-size: 14px;
+    }
+    &__name{
+      color: #384059;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 16px;
+      font-family: $font-Roboto-Bold;
+      margin-bottom: 5px;
+    }
+    &__txt1{
+      font-size: 14px;
+      color: #6c757d!important;
+    }
+    &__txt2{
+      font-size: 14px;
+      color: rgb(56,64,89);
+    }
+    &__txt3{
+      font-size: 14px;
+      color: rgb(204,51,102);
+    }
+    &__actionLink{
+      color: #3478f6;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+    }
+    &__khohangName{
+      display: flex;
+      align-items: center;
+      color: #384059;
+      font-size: 16px;
+      font-family: $font-Roboto-Bold;
+      >svg{
+        margin-right: 5px;
+      }
+    }
+  }
+  &__boxship{
+    background-color: rgb(35,198,200);
+    font-size: 12.25px;
+    color: #ffffff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
