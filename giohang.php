@@ -43,7 +43,7 @@
             </div>
         </div>
 
-        <div class="uk-grid uk-grid-20" uk-grid>
+        <div class="uk-grid uk-grid-20 uk-margin-top" uk-grid>
             <div class="uk-width-auto">
                 <div class="uk-child-width-auto uk-grid-small uk-flex-middle" uk-grid>
                     <div>

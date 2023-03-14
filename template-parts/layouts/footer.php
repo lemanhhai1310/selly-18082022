@@ -1,7 +1,7 @@
-<?php if ($menuBottom): ?>
+<?php if (isset($menuBottom)&&$menuBottom): ?>
     <!--Menu bottom-->
     <nav class="footer__nav uk-position-fixed uk-position-bottom">
-        <ul class="footer__nav__ul uk-nav uk-child-width-expand" uk-tab>
+        <ul class="footer__nav__ul uk-nav uk-child-width-expand uk-tab">
             <li class="uk-active footer__nav__li">
                 <a href="." class="footer__nav__a">
                     <span class="footer__nav__icon footer__nav__icon--sanpham"></span>
@@ -9,7 +9,7 @@
                 </a>
             </li>
             <li class="footer__nav__li">
-                <a href="" class="footer__nav__a">
+                <a href="donhang.php" class="footer__nav__a">
                     <span class="footer__nav__icon footer__nav__icon--donhang"></span>
                     <div class="uk-navbar-subtitle footer__nav__txt line-clamp-1">Đơn hàng</div>
                 </a>
@@ -21,7 +21,7 @@
                 </a>
             </li>
             <li class="footer__nav__li">
-                <a href="" class="footer__nav__a">
+                <a href="thuong.php" class="footer__nav__a">
                     <span class="footer__nav__icon footer__nav__icon--thuong"></span>
                     <div class="uk-navbar-subtitle footer__nav__txt line-clamp-1">Thưởng</div>
                 </a>

@@ -13,7 +13,7 @@
                     </div>
 
                     <div class="uk-navbar-right">
-                        <a href="" class="uk-navbar-item">
+                        <a href="giohang.php" class="uk-navbar-item">
                             <span class="header__navbar__icon header__navbar__icon--cart" data-cart="1"></span>
                         </a>
                     </div>
